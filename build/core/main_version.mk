@@ -23,11 +23,11 @@ ALTHO_PLATFORM_RELEASE_OR_CODENAME := 12L
 
 # Versioning props
 ADDITIONAL_SYSTEM_PROPERTIES  += \
-    org.altho.version=$(Altho_BASE_VERSION) \
+    org.flexo.version=$(FLEXO_BASE_VERSION) \
     org.altho.version.display=$(CUSTOM_VERSION) \
     org.altho.build_date=$(CUSTOM_BUILD_DATE) \
     org.altho.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
     org.altho.build_type=$(CUSTOM_BUILD_TYPE) \
-    org.altho.codename=$(Altho_CODENAME) \
-    ro.altho.maintainer=$(Altho_MAINTAINER)\
+    org.altho.codename=$(FLEXO_CODENAME) \
+    ro.flexo.maintainer=$(FLEXO_MAINTAINER)\
     ro.altho.settings.android_version=$(ALTHO_PLATFORM_RELEASE_OR_CODENAME)
