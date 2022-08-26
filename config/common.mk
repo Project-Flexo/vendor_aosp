@@ -1,7 +1,7 @@
 # Branding
 $(call inherit-product, vendor/aosp/config/branding.mk)
 
-PRODUCT_BRAND ?= Project-Altho
+PRODUCT_BRAND ?= Project-Flexo
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -124,14 +124,14 @@ PRODUCT_PACKAGES += \
      GameSpace
 
 # Gapps
-$(call inherit-product, vendor/gapps/config.mk)
+$(call inherit-product, vendor/gms/gms_mini.mk)
 
 # One Handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true \
 
 # Lawnchair
-include vendor/lawnchair/lawnchair.mk
+#include vendor/lawnchair/lawnchair.mk
 
 # NavigationBarMode
 PRODUCT_PACKAGES += \
