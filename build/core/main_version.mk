@@ -23,8 +23,7 @@ ALTHO_PLATFORM_RELEASE_OR_CODENAME := 12L
 
 # Versioning props
 ADDITIONAL_SYSTEM_PROPERTIES  += \
-    org.altho
-.version=$(FLEXO_BASE_VERSION) \
+    org.altho.version=$(FLEXO_BASE_VERSION) \
     org.altho.version.display=$(CUSTOM_VERSION) \
     org.altho.build_date=$(CUSTOM_BUILD_DATE) \
     org.altho.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
