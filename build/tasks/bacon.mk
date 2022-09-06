@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-CUSTOM_TARGET_PACKAGE := $(PRODUCT_OUT)/$(CUSTOM_VERSION).zip
+CUSTOM_TARGET_PACKAGE := $(PRODUCT_OUT)/$(FLEXO_VERSION).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 MD5 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/md5sum
@@ -25,14 +25,14 @@ start: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) $(SHA256) $(CUSTOM_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(CUSTOM_TARGET_PACKAGE).sha256sum
 	$(hide) $(MD5) $(CUSTOM_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(CUSTOM_TARGET_PACKAGE).md5sum
 	@echo -e ${CL_CYN}""${CL_CYN}
-	@echo -e ${CL_CYN}"     ╔═══╗                   ╔╗     ╔═══╗╔╗  ╔╗ ╔╗        "${CL_CYN}
-	@echo -e ${CL_CYN}"     ║╔═╗║        ╔╗        ╔╝╚╗    ║╔═╗║║║ ╔╝╚╗║║        "${CL_CYN}
-	@echo -e ${CL_CYN}"     ║╚═╝║╔═╗╔══╗ ╚╝╔══╗╔══╗╚╗╔╝    ║║ ║║║║ ╚╗╔╝║╚═╗╔══╗  "${CL_CYN}
-	@echo -e ${CL_CYN}"     ║╔══╝║╔╝║╔╗║ ╔╗║╔╗║║╔═╝ ║║     ║╚═╝║║║  ║║ ║╔╗║║╔╗║  "${CL_CYN}
-	@echo -e ${CL_CYN}"     ║║   ║║ ║╚╝║ ║║║║═╣║╚═╗ ║╚╗    ║╔═╗║║╚╗ ║╚╗║║║║║╚╝║  "${CL_CYN}
-	@echo -e ${CL_CYN}"     ╚╝   ╚╝ ╚══╝ ║║╚══╝╚══╝ ╚═╝    ╚╝ ╚╝╚═╝ ╚═╝╚╝╚╝╚══╝  "${CL_CYN}
-	@echo -e ${CL_CYN}"                 ╔╝║                                      "${CL_CYN}
-	@echo -e ${CL_CYN}"                 ╚═╝                                      "${CL_CYN}
+	@echo -e ${CL_CYN}"     ╔═══╗                   ╔╗      ╔═══╗╔╗               "${CL_CYN}
+	@echo -e ${CL_CYN}"     ║╔═╗║        ╔╗        ╔╝╚╗     ║╔══╝║║               "${CL_CYN}
+	@echo -e ${CL_CYN}"     ║╚═╝║╔═╗╔══╗ ╚╝╔══╗╔══╗╚╗╔╝     ║╚══╗║║ ╔══╗╔╗╔╗╔══╗  "${CL_CYN}
+	@echo -e ${CL_CYN}"     ║╔══╝║╔╝║╔╗║ ╔╗║╔╗║║╔═╝ ║║      ║╔══╝║║ ║╔╗║╚╬╬╝║╔╗║  "${CL_CYN}
+	@echo -e ${CL_CYN}"     ║║   ║║ ║╚╝║ ║║║║═╣║╚═╗ ║╚╗    ╔╝╚╗  ║╚╗║║═╣╔╬╬╗║╚╝║  "${CL_CYN}
+	@echo -e ${CL_CYN}"     ╚╝   ╚╝ ╚══╝ ║║╚══╝╚══╝ ╚═╝    ╚══╝  ╚═╝╚══╝╚╝╚╝╚══╝  "${CL_CYN}
+	@echo -e ${CL_CYN}"                 ╔╝║                                       "${CL_CYN}
+	@echo -e ${CL_CYN}"                 ╚═╝                                       "${CL_CYN}
 	@echo -e ${CL_CYN}""${CL_CYN}
 	@echo -e ${CL_CYN}"===========-Package Completed-==========="${CL_RST}
 	@echo -e ${CL_BLD}${CL_YLW}"Zip: "${CL_YLW} $(CUSTOM_TARGET_PACKAGE)${CL_RST}
