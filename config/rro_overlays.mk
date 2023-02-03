@@ -29,3 +29,43 @@ PRODUCT_PACKAGES += \
     SystemUIGoogleOverlay \
     StorageManagerGoogleOverlay \
     FlipendoOverlay
+
+# Lockscreen clock fonts 
+PRODUCT_PACKAGES += \
+    ClockFontGoogleSansOverlay \
+    ClockFontNothingDotOverlay \
+    ClockFontAdventProOverlay \
+    ClockFontBigNoodleTiltingOverlay \
+    ClockFontCherrySwashOverlay \
+    ClockFontHeadlineOverlay \
+    ClockFontRoadRageOverlay \
+    ClockFontSnowstormOverlay \
+    ClockFontViburOverlay \
+    ClockFontAlienLeagueOverlay \
+    ClockFontBikoOverlay \
+    ClockFontGinoraSansOverlay \
+    ClockFontRivieraOverlay \
+    ClockFontUnionOverlay \
+    ClockFontArcadeInterlacedOverlay \
+    ClockFontDotComOverlay \
+    ClockFontKarmaticArcadeOverlay \
+    ClockFontLiquidCrystalOverlay \
+    ClockFontV5PRFOverlay \
+    ClockFontZeroFourOverlay \
+    ClockFontOdibeeSansOverlay \
+    ClockFontPermanentMarkerOverlay \
+    ClockFontVG5000Overlay \
+    ClockFont3DIsometricBlackOverlay \
+    ClockFont3DIsometricBoldOverlay \
+    ClockFontBalticBoddenOverlay \
+    ClockFontBalticCoastOverlay \
+    ClockFontBalticDuneOverlay \
+    ClockFontBalticStormOverlay \
+    ClockFontCafe24DecoshadowOverlay \
+    ClockFontFortaOverlay \
+    ClockFontMuseoModernoOverlay \
+    ClockFontMXWasgardOverlay \
+    ClockFontNeptunCATOverlay \
+    ClockFontProdeltCoOverlay \
+    ClockFontRubikGlitchOverlay \
+    ClockFontTourneyMediumOverlay
